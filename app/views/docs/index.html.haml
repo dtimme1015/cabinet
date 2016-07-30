@@ -1,6 +1,6 @@
 .wrapper_with_padding
   #docs.clearfix
-    -unless @docs.blank?
+    - unless @docs.blank?
       - @docs.each do |doc|
         %a{ href: (url_for [doc])}
           .doc
